@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, sans-serif;
+  @apply bg-primary;
+  color: white
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+
+h1 {
+  @apply text-4xl;
+}
+h2 {
+  @apply text-3xl;
+}
+h3 {
+  @apply text-2xl;
+}
+
+section {
+  @apply py-8 px-16;
+}
+
+section:hover {
+  background-color: rgba(0, 0, 0,0.1);
+}
+
+header,
+footer {
+  @apply py-10 px-8 bg-secondary text-white;
+}
+
+button {
+  @apply bg-yellow p-2 rounded-lg;
+}
+
+input {
+  @apply px-3 py-2 bg-tertiary text-gray-700 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm;
+}
+
+.project-container button {
+  @apply mt-4;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
